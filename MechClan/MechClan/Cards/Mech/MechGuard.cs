@@ -41,7 +41,7 @@ namespace MechClan.Cards.Mech
                 Health = 10,
                 AttackDamage = 0,
 
-                StartingStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { count = 25, statusId = "Armor" } },
+                StartingStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { count = 25, statusId = "armor" } },
 
                 TriggerBuilders = new List<CharacterTriggerDataBuilder>
                 {
@@ -56,7 +56,7 @@ namespace MechClan.Cards.Mech
                                 EffectStateName = "CardEffectAddStatusEffect",
                                 TargetMode = TargetMode.FrontInRoom,
                                 TargetTeamType = Team.Type.Heroes,
-                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=20} }
+                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=20} }
                             },
                         }
                     }

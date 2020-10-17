@@ -35,7 +35,7 @@ namespace MechClan.Cards.CommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.FrontInRoom,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Spark", count=1} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "spark", count=1} }
                     }
                 },
 

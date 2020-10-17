@@ -18,7 +18,7 @@ namespace MechClan.Upgrades
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
                 //upgradeNotificationKey = IDName + "_Notice",
-                //upgradeIcon = CustomAssetManager.LoadSpriteFromPath("chrono/Clan Assets/clan_32.png"),
+                
                 //HideUpgradeIconOnCard = false,
                 UseUpgradeHighlightTextTags = true,
                 BonusDamage = 15,
@@ -41,7 +41,7 @@ namespace MechClan.Upgrades
                                             TargetMode = TargetMode.Room,
                                             TargetTeamType = Team.Type.Monsters,
                                             ParamInt = 0,
-                                            ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Debuff", count=1} }
+                                            ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "debuff", count=1} }
                                         },
                                 }
                         },

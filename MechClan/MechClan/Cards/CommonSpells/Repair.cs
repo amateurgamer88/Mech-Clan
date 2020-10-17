@@ -35,7 +35,7 @@ namespace MechClan.Cards.CommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.DropTargetCharacter,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=2} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=2} }
                     }
                 },
 

@@ -83,7 +83,6 @@ namespace MechClan.Cards
                 Health = 20,
                 AttackDamage = 0,
 
-                //SubtypeKeys = new List<string> { "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34" },
             };
 
             Utils.AddUnitImg(characterDataBuilder, imgName + ".png");

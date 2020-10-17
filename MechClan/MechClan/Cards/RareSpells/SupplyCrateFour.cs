@@ -29,7 +29,7 @@ namespace MechClan.Cards.RareSpells
                         ParamInt = 100,
                         TargetMode = TargetMode.Room,
                         TargetTeamType = Team.Type.Heroes,
-                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Spark", count=2},  new StatusEffectStackData { statusId= "Armor", count=15} },
+                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Spark", count=2},  new StatusEffectStackData { statusId= "armor", count=15} },
                     },
 
                 },

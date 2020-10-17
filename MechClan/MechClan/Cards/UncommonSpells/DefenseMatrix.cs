@@ -36,7 +36,7 @@ namespace MechClan.Cards.UncommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.DropTargetCharacter,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=5} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=5} }
                     },
 
                     new CardEffectDataBuilder
@@ -45,7 +45,7 @@ namespace MechClan.Cards.UncommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.DropTargetCharacter,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Scorch", count=1} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "scorch", count=1} }
                     }
                 },
 

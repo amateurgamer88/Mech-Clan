@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Dr9Raz+MPL8UAC3Cxxo5Pvsh4UEFw1VAyd1M3O+nq000q0rVqDqhHLg1NxmKzjhvNtZ2eRyjX9tsTdt3pd6tg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Owner\\source\\repos\\Mech_Rough\\Mech_Rough\\Mech_Rough.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

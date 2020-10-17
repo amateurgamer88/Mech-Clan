@@ -18,7 +18,7 @@ namespace MechClan.Upgrades
             {
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
-                //upgradeIcon = CustomAssetManager.LoadSpriteFromPath("chrono/Clan Assets/clan_32.png"),
+                
                 //HideUpgradeIconOnCard = false,
                 UseUpgradeHighlightTextTags = true,
                 BonusDamage = 20,
@@ -35,6 +35,8 @@ namespace MechClan.Upgrades
                         count = 1,
                     },
                 }
+
+
             };
 
             return railtie;

@@ -27,7 +27,7 @@ namespace MechClan.Cards.UncommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.DropTargetCharacter,
                     TargetTeamType = Team.Type.Heroes | Team.Type.Monsters,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Debuff", count=2} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "debuff", count=2} }
                     },
 
                     new CardEffectDataBuilder
@@ -36,7 +36,7 @@ namespace MechClan.Cards.UncommonSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.DropTargetCharacter,
                     TargetTeamType = Team.Type.Heroes | Team.Type.Monsters,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=5} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=5} }
 
                     }
                 },

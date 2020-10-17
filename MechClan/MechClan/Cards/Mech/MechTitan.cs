@@ -41,7 +41,7 @@ namespace MechClan.Cards.Mech
                 Health = 100,
                 AttackDamage = 50,
 
-                StartingStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { count = 25, statusId = "Armor" }, new StatusEffectStackData { count = 1, statusId = "inert" } },
+                StartingStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { count = 25, statusId = "armor" }, new StatusEffectStackData { count = 1, statusId = "inert" } },
 
                 TriggerBuilders = new List<CharacterTriggerDataBuilder>
                 {

@@ -26,7 +26,7 @@ namespace MechClan.Cards.CommonSpells
                         EffectStateName = "CardEffectAddStatusEffect",
                         ParamInt = 100,
                         TargetMode = TargetMode.DropTargetCharacter,
-                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Spark", count=1} }
+                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "spark", count=1} }
                     }
                 },
 

@@ -18,7 +18,7 @@ namespace MechClan.Upgrades
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
                 //upgradeNotificationKey = IDName + "_Notice",
-                //upgradeIcon = CustomAssetManager.LoadSpriteFromPath("chrono/Clan Assets/clan_32.png"),
+                
                 //HideUpgradeIconOnCard = false,
                 UseUpgradeHighlightTextTags = true,
                 BonusDamage = 30,
@@ -27,6 +27,20 @@ namespace MechClan.Upgrades
                 //xCostReduction = 0,
                 //bonusHeal = 0,
                 //BonusSize = 0,
+
+                StatusEffectUpgrades = new List<StatusEffectStackData> {
+                    new StatusEffectStackData
+                    {
+                        statusId = "multistrike",
+                        count = 1,
+                    },
+                new StatusEffectStackData
+                    {
+                        statusId = "inert",
+                        count = 1,
+                    },
+                },
+
 
                 TriggerUpgradeBuilders = new List<CharacterTriggerDataBuilder>
                 {
@@ -42,8 +56,9 @@ namespace MechClan.Upgrades
                                 EffectStateName = "CardEffectAddStatusEffect",
                                 TargetMode = TargetMode.Self,
                                 TargetTeamType = Team.Type.Heroes,
-                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Buff", count=8} }
+                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "buff", count=8} }
                             },
+
                         }
 
                     },

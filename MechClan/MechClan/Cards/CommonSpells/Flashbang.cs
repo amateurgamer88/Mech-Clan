@@ -35,7 +35,7 @@ namespace MechClan.Cards.CommonSpells
                         ParamInt = 100,
                         TargetMode = TargetMode.Room,
                         TargetTeamType = Team.Type.Monsters,
-                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Debuff", count=1} }
+                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "debuff", count=1} }
 
                     }
                 },

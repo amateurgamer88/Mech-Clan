@@ -18,7 +18,7 @@ namespace MechClan.Upgrades
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
                 //upgradeNotificationKey = IDName + "_Notice",
-                //upgradeIcon = CustomAssetManager.LoadSpriteFromPath("chrono/Clan Assets/clan_32.png"),
+                
                 //HideUpgradeIconOnCard = false,
                 UseUpgradeHighlightTextTags = true,
                 BonusDamage = 0,
@@ -40,7 +40,7 @@ namespace MechClan.Upgrades
                                             EffectStateName = "CardEffectAddStatusEffect",
                                             TargetMode = TargetMode.Self,
                                             ParamInt = 100,
-                                            ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=15} }
+                                            ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=15} }
                                         },
                                 }
                         },

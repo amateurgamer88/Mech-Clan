@@ -21,7 +21,7 @@ namespace MechClan.Artifacts
                         RelicEffectClassName = typeof(RelicEffectAddStatusEffectOnSpawn).AssemblyQualifiedName,
                         ParamSourceTeam = Team.Type.Heroes,
                         ParamTrigger = CharacterTriggerData.Trigger.OnSpawn,
-                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId = "Armor", count = 15 } },
+                        ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId = "armor", count = 15 } },
                     },
                     new RelicEffectDataBuilder
                     {

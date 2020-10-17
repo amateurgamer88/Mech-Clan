@@ -54,7 +54,7 @@ namespace MechClan.Cards.Token
                                 EffectStateName = "CardEffectAddStatusEffect",
                                 TargetMode = TargetMode.Room,
                                 TargetTeamType = Team.Type.Heroes | Team.Type.Monsters,
-                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=3} },
+                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=3} },
                             },
                         }
                     },

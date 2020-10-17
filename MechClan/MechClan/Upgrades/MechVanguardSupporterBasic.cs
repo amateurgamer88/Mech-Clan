@@ -18,7 +18,7 @@ namespace MechClan.Upgrades
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
                 //upgradeNotificationKey = IDName + "_Notice",
-                //upgradeIcon = CustomAssetManager.LoadSpriteFromPath("chrono/Clan Assets/clan_32.png"),
+                
                 //HideUpgradeIconOnCard = false,
                 UseUpgradeHighlightTextTags = true,
                 BonusDamage = 0,
@@ -68,9 +68,6 @@ namespace MechClan.Upgrades
                 CanAttack = false,
                 PriorityDraw = false,
                 CanBeHealed = false,
-                StartingStatusEffects = new StatusEffectStackData[] {
-                    new StatusEffectStackData { count=1, statusId="cardless" },
-                },
             };
 
             characterDataBuilder.SubtypeKeys = new List<string> { "MechSubtype_Token" };

@@ -69,13 +69,6 @@ namespace MechClan.Cards
             r.TargetsRoom = true;
 
             r.AssetPath = rootPath + ucardPath;
-            r.EffectBuilders.Add(
-                new CardEffectDataBuilder
-                {
-                    EffectStateName = "CardEffectSpawnMonster",
-                    TargetMode = TargetMode.DropTargetCharacter,
-                    ParamCharacterData = character,
-                });
 
             if (!r.NameKey.HasTranslation())
                 API.Log(BepInEx.Logging.LogLevel.All, r.NameKey + ",Text,,,,," + r.CardID + ",,,,,");

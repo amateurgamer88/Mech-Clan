@@ -22,11 +22,6 @@ namespace MechClan
     public class MechClan : BaseUnityPlugin, IInitializable
     {
         public static ClassData clanRef;
-        void Awake()
-        {
-            var harmony = new Harmony("ca.ag88.mech");
-            harmony.PatchAll();
-        }
 
         public void Initialize()
         {
@@ -142,7 +137,7 @@ namespace MechClan
             API.Log(BepInEx.Logging.LogLevel.All, "Common Cards: " + commons);
             API.Log(BepInEx.Logging.LogLevel.All, "Uncommon Cards: " + uncommons);
             API.Log(BepInEx.Logging.LogLevel.All, "Rare Cards: " + rares);
-            API.Log(BepInEx.Logging.LogLevel.All, "Units + Wards: " + units);
+            API.Log(BepInEx.Logging.LogLevel.All, "Units: " + units);
             API.Log(BepInEx.Logging.LogLevel.All, "Spell Cards: " + spells);
         }
     }

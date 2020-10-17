@@ -53,7 +53,7 @@ namespace MechClan.Cards.Mech
                                 EffectStateName = "CardEffectAddStatusEffect",
                                 TargetMode = TargetMode.Self,
                                 ParamInt = 100,
-                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Armor", count=5} }
+                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=5} }
                             },
                         }
                     },

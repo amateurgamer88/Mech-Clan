@@ -27,7 +27,7 @@ namespace MechClan.Cards.RareSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.Room,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Scorch", count=20} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "armor", count=20} }
                     },
 
                     new CardEffectDataBuilder
@@ -45,7 +45,7 @@ namespace MechClan.Cards.RareSpells
                     ParamInt = 100,
                     TargetMode = TargetMode.Room,
                     TargetTeamType = Team.Type.Heroes,
-                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Scorch", count=1} }
+                    ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "scorch", count=1} }
                     }
                 },
 

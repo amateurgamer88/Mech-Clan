@@ -54,7 +54,7 @@ namespace MechClan.Cards.Mine
                                 EffectStateName = "CardEffectAddStatusEffect",
                                 TargetMode = TargetMode.Room,
                                 TargetTeamType = Team.Type.Monsters,
-                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "Debuff", count=2} }
+                                ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "debuff", count=2} }
                             },
                         }
                     }
