@@ -8,81 +8,71 @@ using MonsterTrainModdingAPI.Constants;
 
 namespace MechClan_1.Cards.Mech
 {
-    class FlawedMech
+    class Vulture
     {
         //unique ID (GUID can make this unique from other same name cards)
-        public static string ID = AGMech.GUID + "FlawedMech";
+        public static string ID = AGMech.GUID + "Vulture";
 
         public static void Make()
         {
             // Basic Card Stats 
             CardDataBuilder railyard = new CardDataBuilder
             {
-                
-                Name = "Flawed Mech",
+                Name = "Vulture",
                 //Card ID
-                CardID = FlawedMech.ID,
+                CardID = Scavenger.ID,
 
                 //Description of what this card does 
-                Description = "<b>Strike:</b> -3 [attack]",
+                Description = "<b>Resolve:</b> Deal 10 damage to the front enemy unit",
                 //Ember cost of this card
                 Cost = 1,
                 //rarity of this card (Starter, Common, Uncommon and Rare)
-                Rarity = CollectableRarity.Starter,
+                Rarity = CollectableRarity.Uncommon,
                 //Pick the clan for this card (clanless for this card)
                 ClanID = VanillaClanIDs.Clanless,
                 //path to the picture for this card
-                AssetPath = "assets/FlawedMech.png",
+                AssetPath = "assets/amateur.png",
                 //card pool this card belongs to
-                //CardPoolIDs = new List<string> { "Awoken", UnitsAllBanner },
+                CardPoolIDs = new List<string> { "Clanless", UnitsAllBanner },
 
                 CardType = CardType.Monster,
                 EffectBuilders = new List<CardEffectDataBuilder>
                 {
                     new CardEffectDataBuilder
                     {
-                    EffectStateName = "CardEffectSpawnMonster",
+                    EffectStateType = typeof(CardEffectSpawnMonster),
                     TargetMode = TargetMode.DropTargetCharacter,
                     ParamCharacterDataBuilder = new CharacterDataBuilder
                     {
-                        CharacterID = FlawedMech.ID,
-                        Name = "Flawed Mech",
+                        CharacterID = Vulture.ID,
+                        Name = "Vulture",
                         Size = 2,
                         Health = 5,
-                        AttackDamage = 12,
-                        AssetPath = "assets/FlawedMech.png",
+                        AttackDamage = 0,
+                        AssetPath = "assets/amateur.png",
                         SubtypeKeys = new List<string> { "MechSubtype_Mech" },
+
                         TriggerBuilders = new List<CharacterTriggerDataBuilder>
                         {
                             new CharacterTriggerDataBuilder
                             {
-                                Trigger = CharacterTriggerData.Trigger.OnAttacking,
+                                Trigger = CharacterTriggerData.Trigger.PostCombat,
                                 EffectBuilders = new List<CardEffectDataBuilder>
                                 {
                                     new CardEffectDataBuilder
                                     {
-                                        EffectStateType = typeof(CardEffectAddTempCardUpgradeToUnits),
-                                        TargetMode = TargetMode.Self,
-                                        ParamCardUpgradeData = new CardUpgradeDataBuilder
-                                        {
-                                            BonusDamage = -3,
-                                            HideUpgradeIconOnCard = true,
-                                        }.Build(),
+                                        EffectStateName = "CardEffectDamage",
+                                        TargetMode = TargetMode.FrontInRoom,
+                                        TargetTeamType = Team.Type.Monsters,
+                                        ParamInt = 10,
                                     },
                                 }
-                            }
+                            },
                         },
                     }
-
-
                     }
-
-                    
                 },
             };
-
-
-
 
             //Do this to complete the card building
             railyard.BuildAndRegister();

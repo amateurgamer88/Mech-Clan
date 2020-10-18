@@ -7,7 +7,7 @@ using System;
 using MechClan_1.Cards.Mech;
 using MechClan_1.Cards.CommonSpells;
 
-[BepInPlugin("com.name.package.generic", "AG Mech", "5.3")]
+[BepInPlugin("com.name.package.generic", "AG Mech", "0.1")]
 [BepInProcess("MonsterTrain.exe")]
 [BepInProcess("MtLinkHandler.exe")]
 [BepInDependency("api.modding.train.monster")]
@@ -25,13 +25,16 @@ public class AGMech : BaseUnityPlugin, IInitializable
     public void Initialize()
     {
         FlawedMech.Make();
-        /*MechEnforcer.Make();
-        Recycle.Make();
+        /*MechEnforcer.Make();*/
+        Recycle.Make();/*
         MechFortress.Make();
         MechGoliath.Make();*/
         MechGuard.Make();/*
         MechGunner.Make();
-        MechRefiner.Make();*/
+        MechRefiner.Make();
+        MechTitan.Make();
+        Scavenger.Make();
+        Vulture.Make();*/
         RegisterSubtypes();
     }
 
@@ -75,7 +78,10 @@ class AddCardToStartingDeckPatch
         /*__instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechEnforcer.ID));
         __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechFortress.ID));
         __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechGoliath.ID));*/
-        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechGuard.ID));/*
-        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(Recycle.ID));*/
+        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechGuard.ID));
+        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(Recycle.ID));/*
+        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(MechTitan.ID));
+        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(Scavenger.ID));
+        __instance.AddCardToDeck(CustomCardManager.GetCardDataByID(Vulture.ID));*/
     }
 }

@@ -8,81 +8,74 @@ using MonsterTrainModdingAPI.Constants;
 
 namespace MechClan_1.Cards.Mech
 {
-    class FlawedMech
+    class MechTitan
     {
         //unique ID (GUID can make this unique from other same name cards)
-        public static string ID = AGMech.GUID + "FlawedMech";
+        public static string ID = AGMech.GUID + "MechTitans";
 
         public static void Make()
         {
             // Basic Card Stats 
             CardDataBuilder railyard = new CardDataBuilder
             {
-                
-                Name = "Flawed Mech",
+                Name = "Mech Titan",
                 //Card ID
-                CardID = FlawedMech.ID,
+                CardID = MechTitan.ID,
 
                 //Description of what this card does 
-                Description = "<b>Strike:</b> -3 [attack]",
+                Description = "<b>Resolve:</b> Deal 10 damage to enemy units.",
                 //Ember cost of this card
-                Cost = 1,
+                Cost = 4,
                 //rarity of this card (Starter, Common, Uncommon and Rare)
-                Rarity = CollectableRarity.Starter,
+                Rarity = CollectableRarity.Rare,
                 //Pick the clan for this card (clanless for this card)
                 ClanID = VanillaClanIDs.Clanless,
                 //path to the picture for this card
-                AssetPath = "assets/FlawedMech.png",
+                AssetPath = "assets/amateur.png",
                 //card pool this card belongs to
-                //CardPoolIDs = new List<string> { "Awoken", UnitsAllBanner },
+                CardPoolIDs = new List<string> { "Awoken", UnitsAllBanner },
 
                 CardType = CardType.Monster,
                 EffectBuilders = new List<CardEffectDataBuilder>
                 {
                     new CardEffectDataBuilder
                     {
-                    EffectStateName = "CardEffectSpawnMonster",
+                    EffectStateType = typeof(CardEffectSpawnMonster),
                     TargetMode = TargetMode.DropTargetCharacter,
                     ParamCharacterDataBuilder = new CharacterDataBuilder
                     {
-                        CharacterID = FlawedMech.ID,
-                        Name = "Flawed Mech",
-                        Size = 2,
-                        Health = 5,
-                        AttackDamage = 12,
-                        AssetPath = "assets/FlawedMech.png",
+                        CharacterID = MechTitan.ID,
+                        Name = "Mech Titan",
+                        Size = 3,
+                        Health = 100,
+                        AttackDamage = 50,
+                        AssetPath = "assets/amateur.png",
                         SubtypeKeys = new List<string> { "MechSubtype_Mech" },
+
+                        StartingStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { count = 25, statusId = "armor" }, new StatusEffectStackData { count = 1, statusId = "inert" } },
+
                         TriggerBuilders = new List<CharacterTriggerDataBuilder>
                         {
                             new CharacterTriggerDataBuilder
                             {
-                                Trigger = CharacterTriggerData.Trigger.OnAttacking,
+                                Trigger = CharacterTriggerData.Trigger.PostCombat,
+                                DisplayEffectHintText = true,
                                 EffectBuilders = new List<CardEffectDataBuilder>
                                 {
                                     new CardEffectDataBuilder
                                     {
-                                        EffectStateType = typeof(CardEffectAddTempCardUpgradeToUnits),
-                                        TargetMode = TargetMode.Self,
-                                        ParamCardUpgradeData = new CardUpgradeDataBuilder
-                                        {
-                                            BonusDamage = -3,
-                                            HideUpgradeIconOnCard = true,
-                                        }.Build(),
+                                        EffectStateName = "CardEffectDamage",
+                                        TargetMode = TargetMode.Room,
+                                        TargetTeamType = Team.Type.Monsters,
+                                        ParamInt = 10,
                                     },
                                 }
                             }
-                        },
+                        }
                     }
-
-
                     }
-
-                    
                 },
             };
-
-
-
 
             //Do this to complete the card building
             railyard.BuildAndRegister();

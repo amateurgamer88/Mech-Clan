@@ -87,3 +87,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Monster Train\BepInEx\plugins\nets
 C:\Program Files (x86)\Steam\steamapps\common\Monster Train\BepInEx\plugins\netstandard2.0\netstandard2.0\MechClan_1.pdb
 C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\MechClan_1.dll
 C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\MechClan_1.pdb
+C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\2205086946\plugins\MechClan_1.dll
+C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\2205086946\plugins\MechClan_1.pdb
+C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\2205086946\plugins\Mech Clan\MechClan_1.dll
+C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\2205086946\plugins\Mech Clan\MechClan_1.pdb

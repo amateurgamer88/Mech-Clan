@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\Program Files %28x86%29\Steam\steamapps\workshop\content\1102190\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Program Files %28x86%29\Steam\steamapps\workshop\content\1102190\2205086946\plugins\Mech Clan\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,6 +80,9 @@
     <Compile Include="Cards\Mech\MechGuard.cs" />
     <Compile Include="Cards\Mech\MechGunner.cs" />
     <Compile Include="Cards\Mech\MechRefiner.cs" />
+    <Compile Include="Cards\Mech\MechTitan.cs" />
+    <Compile Include="Cards\Mech\Scavenger.cs" />
+    <Compile Include="Cards\Mech\Vulture.cs" />
     <Compile Include="Clan.cs" />
     <Compile Include="MechClan_1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,7 +11,7 @@ namespace MechClan_1.Cards.CommonSpells
     class Recycle
     {
         //unique ID (GUID can make this unique from other same name cards)
-        /*public static string ID = AGMech.GUID + "Recycle";
+        public static string ID = AGMech.GUID + "Recycle";
 
 
         public static void Make()
@@ -22,7 +22,7 @@ namespace MechClan_1.Cards.CommonSpells
                 //Name of the card
                 Name = "Recycle",
                 //Description of what this card does 
-                Description = "Front unit gains [spark] <b>1</b>",
+                Description = "Rear unit gains [spark] <b>1</b>",
                 //Card ID
                 CardID = Recycle.ID,
                 //Ember cost of this card
@@ -43,15 +43,15 @@ namespace MechClan_1.Cards.CommonSpells
                         EffectStateType = typeof(CardEffectSacrifice),
                         ParamInt = 100,
                         TargetMode = TargetMode.DropTargetCharacter,
-                        TargetTeamType = Team.Type.Heroes,
+                        TargetTeamType = Team.Type.Monsters,
                     },
 
                     new CardEffectDataBuilder
                     {
                         EffectStateType = typeof(CardEffectAddStatusEffect),
                         ParamInt = 100,
-                        TargetMode = TargetMode.FrontInRoom,
-                        TargetTeamType = Team.Type.Heroes,
+                        TargetMode = TargetMode.BackInRoom,
+                        TargetTeamType = Team.Type.Monsters,
                         ParamStatusEffects = new StatusEffectStackData[] { new StatusEffectStackData { statusId= "spark", count=1} }
                     }
                 },
@@ -61,6 +61,6 @@ namespace MechClan_1.Cards.CommonSpells
             //Do this to complete the card building
             railyard.BuildAndRegister();
 
-        }*/
+        }
     }
 }

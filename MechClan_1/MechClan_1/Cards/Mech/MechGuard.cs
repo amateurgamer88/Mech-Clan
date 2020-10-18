@@ -18,6 +18,7 @@ namespace MechClan_1.Cards.Mech
             // Basic Card Stats 
             CardDataBuilder railyard = new CardDataBuilder
             {
+                Name = "Mech Guard",
                 //Card ID
                 CardID = MechGuard.ID,
 
